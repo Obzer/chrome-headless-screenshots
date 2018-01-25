@@ -10,4 +10,4 @@ while : ; do
   sleep 1
 done
 
-node index.js --outputDir=/var/output/ "$@"
+node index.js --outputDir=/home "$@"
