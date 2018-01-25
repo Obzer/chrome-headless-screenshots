@@ -13,11 +13,11 @@ RUN mkdir -p /usr/src/app
 ADD . /usr/src/app
 
 # Install dependencies
-WORKDIR /usr/src/app
 RUN npm install
 
 # Prepare output area
-RUN mkdir -p /var/output/
+WORKDIR /home
+VOLUME ["/home"]
 
 # Make executable
 RUN chmod +x ./run.sh
